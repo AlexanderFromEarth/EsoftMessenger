@@ -1,0 +1,54 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.container_centered {
+  justify-content: center;
+}
+
+.login-form {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  background-color: wheat;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.login-form__email,
+.login-form__password,
+.login-form__legend,
+.login-form__submit {
+  margin: 5px;
+}
+
+.login-form__email,
+.login-form__password {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.login-form__email-label,
+.login-form__password-label {
+  flex: 1 0 27%;
+}
+
+.login-form__email-input,
+.login-form__password-input {
+  flex: 2 0 70%;
+}
+
+.login-form__legend,
+.login-form__submit {
+  align-self: center;
+}
+
+.login-form__submit {
+  width: 50%;
+}
