@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Register Form</title>
   </head>
   <body>
     <section class="container container_centered">
-      <form class="register-form" method="POST">
-        <legend class="register-form__legend">Register</legend>
-        <div class="register-form__email">
-          <label
-            class="register-form__email-label"
-            for="register-form__email-input"
-            >Email</label
-          >
-          <input
-            type="email"
-            id="register-form__email-input"
-            class="register-form__email-input"
-            placeholder="example@email.com"
-            required
-          />
-        </div>
-        <div class="register-form__phone-number">
-          <label
-            class="register-form__phone-number-label"
-            for="register-form__phone-number-input"
-            >Phone Number</label
-          >
-          <input
-            type="tel"
-            id="register-form__phone-number-input"
-            class="register-form__phone-number-input"
-            placeholder="+78000000000 or 88000000000"
-            pattern="((\+\d+)|\d+)[0-9]{10}"
-            required
-          />
-        </div>
-        <div class="register-form__nickname">
-          <label
-            class="register-form__nickname-label"
-            for="register-form__nickname-input"
-            >Nickname</label
-          >
-          <input
-            type="text"
-            id="register-form__nickname-input"
-            class="register-form__nickname-input"
-            placeholder="example"
-            required
-          />
-        </div>
-        <div class="register-form__password">
-          <label
-            class="register-form__password-label"
-            for="register-form__password-input"
-            >Password</label
-          >
-          <input
-            type="password"
-            id="register-form__password-input"
-            class="register-form__password-input"
-            placeholder="password"
-            required
-          />
-        </div>
-        <input type="submit" value="Register" class="register-form__submit" />
+      <form class="form register-form" method="POST">
+        <fieldset class="form__fields">
+          <legend class="form__legend">Register</legend>
+          <div class="form__field">
+            <label class="form__label" for="register-form__email-input"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="register-form__email-input"
+              class="form__input"
+              placeholder="example@email.com"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label
+              class="form__label"
+              for="register-form__phone-number-input"
+              >Phone</label
+            >
+            <input
+              type="tel"
+              id="register-form__phone-number-input"
+              class="form__input"
+              placeholder="+78000000000 or 88000000000"
+              pattern="((\+\d+)|\d+)[0-9]{10}"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="register-form__nickname-input"
+              >Nickname</label
+            >
+            <input
+              type="text"
+              id="register-form__nickname-input"
+              class="form__input"
+              placeholder="example"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="register-form__password-input"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="register-form__password-input"
+              class="form__input"
+              placeholder="password"
+              required
+            />
+          </div>
+          <div class="form__buttons">
+            <button type="submit" class="button form__submit">Register</button>
+          </div>
+        </fieldset>
       </form>
     </section>
   </body>

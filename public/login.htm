@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Login Form</title>
   </head>
   <body>
     <section class="container container_centered">
-      <form class="login-form" method="POST">
-        <legend class="login-form__legend">Login</legend>
-        <div class="login-form__email">
-          <label class="login-form__email-label" for="login-form__email-input"
-            >Email</label
-          >
-          <input
-            type="email"
-            id="login-form__email-input"
-            class="login-form__email-input"
-            placeholder="example@email.com"
-            required
-          />
-        </div>
-        <div class="login-form__password">
-          <label
-            class="login-form__password-label"
-            for="login-form__password-input"
-            >Password</label
-          >
-          <input
-            type="password"
-            id="login-form__password-input"
-            class="login-form__password-input"
-            placeholder="password"
-            required
-          />
-        </div>
-        <input type="submit" value="LogIn" class="login-form__submit" />
+      <form class="form login-form" method="POST">
+        <fieldset class="form__fields">
+          <legend class="form__legend">Login</legend>
+          <div class="form__field">
+            <label class="form__label" for="login-form__email-input"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="login-form__email-input"
+              class="form__input"
+              placeholder="example@email.com"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="login-form__password-input"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="login-form__password-input"
+              class="form__input"
+              placeholder="password"
+              required
+            />
+          </div>
+          <div class="form__buttons">
+            <button type="submit" class="button form__submit">LogIn</button>
+          </div>
+        </fieldset>
       </form>
     </section>
   </body>
