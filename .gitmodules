@@ -1,0 +1,3 @@
+[submodule "src/helpers/js-homework"]
+	path = src/helpers/js-homework
+	url = git@github.com:AlexanderFromEarth/js-homework
