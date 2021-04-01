@@ -6,6 +6,8 @@ import FormInput from "../Form/FormFields/FormField/FormInput/FormInput";
 import { Validator } from "../../helpers/js-homework/validator";
 import "./LoginForm.css";
 
+const validator = new Validator();
+
 const LoginForm = () => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -13,7 +15,6 @@ const LoginForm = () => {
     email: [],
     password: [],
   });
-  const validator = new Validator();
 
   return (
     <Form
@@ -30,7 +31,10 @@ const LoginForm = () => {
             email
           ).errors,
           password: validator.validate(
-            { type: "string", minLength: 6 },
+            {
+              type: "string",
+              minLength: 6,
+            },
             password
           ).errors,
         })
@@ -39,8 +43,8 @@ const LoginForm = () => {
       <FormInput
         id="login-form__email-input"
         name="Email"
+        type="text"
         placeholder="example@email.com"
-        required={true}
         errors={errors.email}
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -49,7 +53,6 @@ const LoginForm = () => {
         name="Password"
         type="password"
         placeholder="password"
-        required={true}
         errors={errors.password}
         onChange={(e) => setPassword(e.target.value)}
       />
