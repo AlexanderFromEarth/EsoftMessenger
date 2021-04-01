@@ -8,8 +8,9 @@ const Form = ({
   fieldsClassName,
   className,
   children,
+  ...rest
 }) => (
-  <form className={["form", className].join(" ")} method="POST">
+  <form className={["form", className].join(" ")} method="POST" {...rest}>
     <FormFields
       className={fieldsClassName}
       title={title}

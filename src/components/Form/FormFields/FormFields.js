@@ -14,6 +14,8 @@ const FormFields = ({ title, titleClassName, className, children }) => (
           component={child}
           name={child.props.name}
           labelClassName={child.props.labelClassName}
+          messageClassName={child.props.messageClassName}
+          errors={child.props.errors}
         />
       ) : (
         child
